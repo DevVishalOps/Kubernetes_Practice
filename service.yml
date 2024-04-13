@@ -10,6 +10,5 @@ spec:
   selector:
     name: pod-1
   ports:
-    - name: http
-      protocol: TCP 
+    - name: http 
       port: 80
