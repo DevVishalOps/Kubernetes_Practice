@@ -1,0 +1,8 @@
+apiVersion: V1
+kind: Pod 
+metadata: 
+    name: pod_1
+    labels:
+      app: my-app 
+      env: production 
+    namespace: my
