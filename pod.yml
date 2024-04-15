@@ -1,20 +1,21 @@
+---
 apiVersion: v1
-kind: Pod 
-metadata: 
-    name: my-pod-1
-    labels:
-      app: my-app 
-      env: production 
-    namespace: prod
-spec: 
+kind: Pod
+metadata:
+  name: eb-ms-pod
+  labels:
+    env: UAT-env
+    app: eb-ms-app
+  namespace: production
+spec:
   containers:
-    - name: my-nginx
+    - name: eb-ms-instance
       image: nginx
       ports:
-        - name: http 
+        - name: http
           containerPort: 80
-    - name: my-tomcat
+    - name: eb-tomcat-instance
       image: tomcat
       ports:
-        - name: http 
+        - name: java
           containerPort: 8080
